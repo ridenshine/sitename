@@ -1,0 +1,207 @@
+/* зкид стилів */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* кінець зкидання */
+
+@font-face {
+    font-family: Italic;
+    src: url(./fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(./fonts/RobotoMono-Regular.ttf);
+}
+@font-face {
+    font-family: Menu;
+    src: url(./fonts/PlusJakartaSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url(./fonts/Barlow-Regular.ttf);
+}
+@font-face {
+    font-family: Plex;
+    src: url(./fonts/IBMPlexSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: List;
+    src: url(./fonts/Cabin-Regular.ttf);
+}
+
+h1{
+    font-family: Regular; 
+    text-transform: uppercase;
+    font-size:30px;
+    font-weight:bolder;
+    color: orangered;
+    padding: 10px;
+}
+
+.container{
+    width:75%;
+    margin:auto;
+}
+
+.header span{
+    font-size: 7px;
+    color: grey;
+    margin: 1px;
+}
+
+.navbar {
+    background-color:rgb(34, 41, 41);
+}
+
+.navbar-nav ul li{
+    color:white;
+    font-family: Menu;
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.navbar-nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+.active {
+    background-color:orangered;
+}
+
+.header {
+    padding: 16px 0px;
+}
+.header-logo{
+    float:left;
+}
+.header-user{
+    float:right;
+}
+.header-container{
+    clear:both;
+    display:table;
+}
+.header-user button{
+    text-transform: uppercase;
+    font-family: Italic;
+    padding:10px 30px;
+}
+.login {
+    background-color: transparent;
+    border-color: transparent;
+}
+.contact{
+    background-color: orangered;
+    border-color:orangered;
+}
+
+.main-header {
+    font-family: Plex;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 27px;
+    margin: 35px 0px;
+    width: 55%;
+}
+.main-paragraph {
+    font-family: Barlow;
+    font-size: 23px;
+    width:80%;
+    padding:10px 0px 0px 0px;
+    margin:25px 0px;
+}
+.main-list p{
+    margin: 10px 0px;
+    font-weight: bold;
+    font-size: 23px;
+}
+.main-list ul li{
+    font-family: List;
+    list-style: disc;
+    list-style-position:inside;
+    margin:7px 10px;
+    font-size: 19px;
+}
+.main-list{
+    padding-bottom: 10px;
+}
+.gallery-single{
+ width: 16%;
+ display:inline-block;
+}
+.single-image img{
+    width:100%;
+    height:100%;
+}
+.single-image{
+    height: 150px;
+}
+.gallery{
+    padding:20px;
+}
+.single-description{
+    min-height: 70px;
+}
+
+@media(max-width:425px){
+    .gallery-single{
+        width:100%;
+    }
+    .header-logo{
+        float:none;
+    }
+    .header-user{
+        float:none;
+    }
+    .header-logo{
+        text-align: center;
+    }
+}
