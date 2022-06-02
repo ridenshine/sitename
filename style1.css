@@ -84,7 +84,7 @@ h1{
 }
 
 .container{
-    width:85%;
+    width: 80%;
     margin:auto;
 }
 
@@ -101,7 +101,7 @@ h1{
 
 .navbar-container{
   clear: both; 
- display: table;
+  display: table; 
 }
 
 .navbar-nav {
@@ -110,7 +110,7 @@ h1{
 .navbar-search{
     float: right;
 }
-*/
+
 
 .navbar-nav ul li{
     color:white;
@@ -119,6 +119,7 @@ h1{
     display: inline-block;
     padding: 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .navbar-nav ul li a{
@@ -131,13 +132,15 @@ h1{
 }
 
 .header {
-    padding: 16px 0px;
+    padding: 30px 0px 16px 0px;
 }
 .header-logo{
     float:left;
+    text-align: left;
 }
 .header-user{
     float:right;
+    text-align: right;
 }
 .header-container{
     clear:both;
@@ -163,14 +166,14 @@ h1{
     font-weight: bolder;
     font-size: 27px;
     margin: 35px 0px;
-    width: 65%;
+    width: 90%;
 }
 .main-paragraph {
     font-family: Barlow;
-    font-size: 23px;
-    width: 87%;
+    font-size: 24px;
     padding:10px 0px 0px 0px;
     margin:25px 0px;
+    width: 80%;
 }
 .main-list p{
     margin: 10px 0px;
@@ -186,25 +189,23 @@ h1{
 }
 .main-list{
     padding: 25px 0px;
-    margin: 20px 0px;
+    margin: 30px 0px;
     
 }
-.recentnews{
+.main-recent{
     text-transform:uppercase;
     color:orangered;
     font-size: smaller;
     font-family: Menu;
     font-weight: bolder;
-    padding: 20px 0px 0px 3.1px;
-    margin: 20px 0px 0px 0px;
+    padding: 15px 0px 25px 3.1px;
+    margin: 0px;
 }
 .gallery-single{
  float: left;
- width: 15%;
-
- /*  display: inline-block; */
-
- padding: 0px 9.1px;
+ width: 16%;
+ padding: 0px 10px;
+ box-sizing: border-box;
 
 }
 .single-image img{
@@ -212,26 +213,36 @@ h1{
     height:100%;
 }
 .single-image{
-    height: 130px;
-    
+    height: 160px;    
 }
-.gallery{
-    padding:20px 0px;
+.gallery-container{
+    padding:10px 0px;
     clear: both;
     display: table;
 }
 .single-description{
     min-height: 70px;
+    padding-bottom: 30px;
 }
-
 
 @media(max-width:768px){
     .gallery-single{
-        width:40%;
+        width:50%;
+    }
+    .main-paragraph{
+        width:100%;
     }
 }
 
 @media(max-width:425px){
+    .navbar-nav{
+        text-align:left;
+        float: none;
+    }
+    .navbar-nav ul li{
+        display: inline-block;
+        width: 30%;
+    }
     .gallery-single{
         width:100%;
     }
@@ -241,11 +252,11 @@ h1{
     .header-user{
         float:none;
     }
-    .header-logo{
-        text-align: center;
-    }
     .header span{
         font-size: 7px;
+    }
+    .main-paragraph{
+        width: 100%;
     }
 
 }
