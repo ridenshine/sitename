@@ -96,7 +96,6 @@ h1{
 
 .navbar {
     background-color:rgb(34, 41, 41);
-    
 }
 
 .navbar-container{
@@ -164,16 +163,16 @@ h1{
     font-family: Plex;
     text-transform: capitalize;
     font-weight: bolder;
-    font-size: 27px;
-    margin: 35px 0px;
-    width: 90%;
+    font-size: 30px;
+    margin: 50px 0px;
+    
 }
 .main-paragraph {
     font-family: Barlow;
     font-size: 24px;
     padding:10px 0px 0px 0px;
     margin:25px 0px;
-    width: 80%;
+    width: 85%;
 }
 .main-list p{
     margin: 10px 0px;
@@ -239,9 +238,12 @@ h1{
         text-align:left;
         float: none;
     }
+    .container{
+        width: 90%;
+    }
     .navbar-nav ul li{
         display: inline-block;
-        width: 30%;
+        box-sizing: border-box;
     }
     .gallery-single{
         width:100%;
@@ -251,9 +253,6 @@ h1{
     }
     .header-user{
         float:none;
-    }
-    .header span{
-        font-size: 7px;
     }
     .main-paragraph{
         width: 100%;
