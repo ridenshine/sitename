@@ -166,7 +166,7 @@ h1{
     font-size: 30px;
     margin: 50px 0px;
     padding-top: 10px;
-    
+     
 }
 .main-paragraph {
     font-family: Barlow;
@@ -204,7 +204,7 @@ h1{
 .gallery-single{
  float: left;
  width: 16%;
- padding: 0px 10px;
+ padding: 0px 8px;
  box-sizing: border-box;
 
 }
