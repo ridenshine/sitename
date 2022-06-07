@@ -168,7 +168,7 @@ h1{
     padding-top: 10px;
      
 }
-.main-paragraph {
+.main-paragraph p{
     font-family: Barlow;
     font-size: 24px;
     padding:10px 0px 0px 0px;
@@ -242,9 +242,12 @@ h1{
     .container{
         width: 90%;
     }
+    .navbar-nav ul{
+        width: 85%;
+        margin: auto;
+    }
     .navbar-nav ul li{
-        display: inline-block;
-        box-sizing: border-box;
+        padding: 27px;
     }
     .gallery-single{
         width:100%;
@@ -258,5 +261,44 @@ h1{
     .main-paragraph{
         width: 100%;
     }
+}
 
+@media(max-width:375px){
+    .navbar-nav ul{
+        width: 93%;
+        margin: auto;
+    }
+    .navbar-nav ul li{
+        padding: 25px;
+    }
+    .main-paragraph p{
+        width: 100%;
+        margin: auto;
+        font-size: 23px;
+    }
+}
+
+@media(max-width:320px){
+    .navbar-nav ul{
+        width: 100%;
+        margin: auto;
+    }
+    .navbar-nav ul li{
+        padding: 20px;
+    }
+    .main-header h2{
+        font-size: 27px;
+    }
+    .main-list ul li{
+        font-size: 18px;
+    }
+    .main-paragraph p{
+        font-size: 22px;
+    }
+    .main-list p{
+        font-size: 20px;
+    }
+    .single-description p{
+        font-size: 18px;
+    }
 }
