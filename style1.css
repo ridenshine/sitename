@@ -106,9 +106,26 @@ h1{
 .navbar-nav {
     float: left;
 }
+.navbar-container{
+    position: relative;
+}
 
 .navbar-search{
     float: right;
+    width: 150px;
+    height: 40px;
+    line-height: 54px;
+}
+
+.search{
+    height: 100%;
+    width: 100%;
+}
+.navbar-search:after{
+    content:'\1F50D' ;
+    position: absolute;
+    right: -4px;
+    top: 1.49px;
 }
 
 .navbar-nav ul li{
@@ -178,13 +195,13 @@ h1{
 .main-paragraph p{
     font-family: Barlow;
     font-size: 24px;
-    padding:10px 0px 0px 0px;
-    margin:25px 0px;
+    padding:0 0 15px 0;
+    margin: 80px 0px;
     width: 85%;
 }
 
 .main-list p{
-    margin: 10px 0px;
+    margin: 35px 0px 13px 0px;
     font-weight: bold;
     font-size: 23px;
 }
@@ -198,8 +215,8 @@ h1{
 }
 
 .main-list{
-    padding: 25px 0px;
-    margin: 30px 0px;
+    padding: 0 0 30px 0;
+    margin: 55px 0px;
 }
 
 .main-recent{
@@ -247,16 +264,16 @@ h1{
     .main-recent{
         padding: 20px 40px;
     }
-    .main-paragraph p{
+    .container{
         width: 95%;
-        padding-top: 35px;
     }
-    .main-list p{
-        margin-top: 45px ;
+    .main-paragraph p{
+        width: 100%;
+        padding-top: 20px;
     }
     .main-list{
-        padding: 5px 0px;
-        margin-bottom: 50px;
+        padding: 0px;
+        margin-bottom: 90px;
     }
     .gallery-single{
         width:50%;
@@ -275,7 +292,11 @@ h1{
         float: none;
     }
     .container{
-        width: 90%;
+        width: 95%;
+    }
+    .main-paragraph p{
+        width: 95%;
+        padding-top: 35px;
     }
     .navbar-nav ul{
         width: 85%;
@@ -303,6 +324,13 @@ h1{
     .main-paragraph{
         width: 100%;
     }
+    .main-list p{
+        font-size: 20px;
+        margin: 0 0 13px 0;
+    }
+    .main-list{
+        margin-bottom: 40px;
+    }
 }
 
 @media(max-width:375px){
@@ -317,6 +345,10 @@ h1{
         width: 100%;
         margin: auto;
         font-size: 23px;
+    }
+    .main-list p{
+        font-size: 20px;
+        margin: 0 0 13px 0;
     }
     .main-recent{
         padding: 25px;
@@ -342,6 +374,7 @@ h1{
     }
     .main-list p{
         font-size: 20px;
+        margin: 0 0 13px 0;
     }
     .main-recent{
         padding: 25px;
