@@ -112,20 +112,16 @@ h1{
 
 .navbar-search{
     float: right;
-    width: 150px;
-    height: 40px;
-    line-height: 54px;
 }
 
 .search{
-    height: 100%;
-    width: 100%;
+   margin-top: 18px;
 }
 .navbar-search:after{
     content:'\1F50D' ;
     position: absolute;
-    right: -4px;
-    top: 1.49px;
+    right: 0px;
+    top: 22px;
 }
 
 .navbar-nav ul li{
@@ -189,7 +185,6 @@ h1{
     font-size: 30px;
     margin: 50px 0px;
     padding-top: 10px;
-     
 }
 
 .main-paragraph p{
